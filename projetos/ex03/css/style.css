@@ -1,1 +1,123 @@
+@charset "UTF-8";
+
+* {
+  
+}
+
+body {
+  background-color: #FAFFFF;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 100px;
+  color: #1D5EDF;
+  font-weight: bold;
+}
+
+.login {
+  text-align: center;
+}
+
+.login input {
+  border: none;
+  background-color: #E6F4FF;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0px lightgrey;
+}
+
+div input {
+  width: 370px;
+  padding: 13px;
+  margin: 3px;
+  background-color: lightgrey;
+}
+div.botao {
+  padding: 8px;
+  text-align: center;
+}
+
+main button {
+  background-color: #1D5EDF;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.1em;
+  padding: 11px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  text-shadow: 1px 1px 1px lightgrey;
+  box-shadow: 1px 1px 1px black;
+}
+
+main button:hover {
+  box-shadow: -1px -1px 1px black;
+}
+
+.esqueceu-senha {
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ou {
+  text-align: center;
+}
+
+.nova-conta {
+  text-align: center;
+}
+
+.nova-conta button {
+  color: white;
+  font-size: 16px;
+  background-color: #479A18;
+  padding: 8px;
+  width: 150px;
+  border-radius: 5px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 1px 1px 0px lightgrey;
+}
+
+.ou::after{
+  content: "";
+  display: block;
+  width: 180px;
+  height: 1px;
+  left: 40px;
+  background-color: grey;
+  top: 22.5em;
+  position: absolute;
+}
+
+.ou::before{
+  content: "";
+  display: block;
+  width: 180px;
+  height: 1px;
+  position: absolute;
+  right: 40px;
+  background-color: grey;
+  top: 22.5em;
+}
+
+ul {
+  text-align: center;
+  margin: 50px 50px 0px 50px;
+  columns: 2;
+}
+
+li {
+  padding: 2px;
+}
+
+footer {
+  text-align-last: center;
+  color: grey;
+}
 
