@@ -6,7 +6,7 @@
 }
 
 html body {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-color: black;
 }
@@ -44,6 +44,8 @@ iframe#tela {
 }
 
 section#redes-sociais {
+  margin-top: 5em;
+  padding-right: 4%;
   text-align: right;
 }
 
