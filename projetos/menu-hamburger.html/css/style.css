@@ -1,1 +1,88 @@
+@charset "UTF-8";
 
+/* Configuração padrão tirando os espaços internos e externos*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: black;
+  height: 100%;
+}
+
+/* totalizando o container e o realocando, deixando-o centralizado e maximizado */
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu {
+  position: absolute;
+  opacity: 0;
+}
+
+/* definindo uma configuração universal pro label e  sua posição */
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 150px;
+  width: 200px;
+}
+
+/* configuração universal dos spans dentro do label, tamanhos e suas proporções */
+label span {
+  position: absolute;
+  display: block;
+  height: 25px;
+  width: 100%;
+  border-radius: 30px;
+  transition: 1s ease-in-out;
+}
+
+/* configuração individual de capa span pra dar forma e cor a eles e suas posições dentro da label */
+label span:nth-child(1) {
+  padding-top: 50px;
+  border-radius: 80px 80px 30px 30px;
+  background-image: linear-gradient(orange, darkorange, white);
+  top: 0px;
+}
+label span:nth-child(2) {
+  background-image: linear-gradient(brown, gold, brown);
+  padding: 20px;
+  top: 65px;
+}
+label span:nth-child(3) {
+  padding-bottom: 50px;
+  border-radius: 30px 30px 80px 80px;
+  background-image: linear-gradient(white, darkorange, orange);
+  top: 120px;
+}
+
+/* animações que irão realizar quando o valor do check-box for checado ou seja estiver checked, com determinados movimentos */
+#menu:checked + label span:nth-child(1) {
+  transform: rotate(45deg);
+  padding-top: 30px;
+  border-radius: 30px;
+  background-image: linear-gradient(white, darkred, red);
+  top: 60px;
+  transition: top 1s, padding 1s, border-radius 1s, transform 4s;
+}
+
+#menu:checked + label span:nth-child(2) {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#menu:checked + label span:nth-child(3) {
+  transform: rotate(-45deg);
+  padding-bottom: 30px;
+  border-radius: 30px;
+  background-image: linear-gradient(red, darkred, white);
+  top: 60px;
+  transition: top 1s, padding 1s, border-radius 1s, transform 4s;
+}
