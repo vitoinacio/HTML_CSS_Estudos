@@ -53,9 +53,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: -1px;
+  left: 0;
   gap: space-between;
-  position: absolute;
-  top: 0;
   width: 100vw;
 }
 
