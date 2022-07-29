@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <script src="js/index.js"></script>
   <title>Projeto Pagina de Hotel</title>
+  
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+    
 </head>
 <body>
-	<header>
-	  <section id="imagem_logo">
-	    <img src="imagens/logo.png" alt="logo do hotel" />
-	    <h6>
+	<header class="escopo">
+	  <section class="logo">
+	    <img src="src/imagens/logo.png" alt="logo do hotel" class="logo-imagem"/>
+	    <h6 class="nome-hotel">
 	      Styles Hotel
       </h6>
 	  </section>
-	  <section id="navegacao">
-	    <nav>
+	  <section class="opcoes">
+	    <nav class="navegacao">
 	      <a href="#">Home</a>
 	      <a href="#">About</a>
 	      <a href="#">Rooms</a>
@@ -25,25 +29,24 @@
 	      <a href="#">Galery</a>
 	      <a href="#">Contact</a>
 	    </nav>
-	    <input type="button" name="contatos" id="contato" value="contate-nos" />
 	  </section>
-	  <section id="nome_principal">
-	    <h1>
+	  <section class="titulo-principal">
+	    <h1 class="nome">
 	      Styles Hotel
       </h1>
-	    <h4>
+	    <h4 class="frase-efeito">
 	      O seu hotel de férias perfeito, e com uma experiência unica!
 	    </h4>
 	  </section>
-	  <section id="reserva">
-	    <input type="date" name="entrada" id="entrada" value="Entrada em" />
-	    <input type="date" name="saida" id="saida" value="Saida em"/>
-	    <input type="submit" name="reserve" id="reserve" value="Reservar agora" />
+	  <section class="escolha-reserva">
+	    <input type="date" name="entrada" id="entrada" value="" class="reserva data"/>
+	    <input type="date" name="saida" id="saida" value=""class="reserva data"/><br/>
+	    <input type="submit" name="reserve" id="reserve" value="Reservar agora" class="reserva selecionar-reserva"/>
 	  </section>
 	</header>
 	<main>
-	  <section id="apresentacao">
-	    <div id="informacao">
+	  <section>
+	    <div>
 	      <h2>
 	        Elegância e conforto, com toda comodidade pra você.
 	      </h2>
@@ -52,8 +55,8 @@
         </p>
         <a href="#">Sobre o Styles Hotel</a>
       </div>
-      <div id="imagem_informacao">
-        <img src="imagens/vista.jpeg" alt="" />
+      <div>
+        <img src="src/imagens/piscina.jpeg" alt="piscina do hotel" />
       </div>
 	  </section>
 	</main>
