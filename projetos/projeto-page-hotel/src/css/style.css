@@ -1,1 +1,126 @@
+@charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root {
+  --font1: Arial, Verdana, Helvetica, sans-serif;
+  --font2: 'Quicksand', sans-serif;
+  --font3: 'Poiret One', cursive;
+  
+  --cor1: #FFFAFF; /* Cinza bem clarinho */
+  --cor2: #8AF3FF; /* azul clarinho */
+  --cor3: #84E6F8; /* Azul Medio */
+  --cor4: #020887; /* Azul escuro */
+}
+
+body {
+  background-color: grey;
+  font-family: var(--font1);
+  width: 100vw;
+  height: 100vh;
+}
+
+.escopo {
+  background: url('../imagens/vista.jpeg') no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 750px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding-top: 80px;
+}
+
+.logo .logo-imagem {
+  width: 50px;
+}
+
+.logo .nome-hotel {
+  font-family: var(--font2);
+  color: #F1ECFF;
+  font-size: 1.3em;
+  text-shadow:  1px 4px 15px #000000;
+}
+
+.opcoes {
+  background-color: #e1e1e13f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: space-between;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+.opcoes .navegacao {
+  display: flex;
+  
+}
+
+.navegacao a {
+  color: rgba(0,0,0);
+  font-size: 1.8em;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 16px 17px;
+  text-shadow:  1px 1px 30px #000000;
+}
+
+.navegacao a:hover {
+  background-color: #e1e1e18f;
+}
+
+.titulo-principal {
+  text-align: center;
+  margin-top: 30px;
+  padding: 70px 100px;
+}
+
+.titulo-principal .nome {
+  color: #F1ECFF;
+  font-family: var(--font2);
+  font-size: 6em;
+  text-shadow:  1px 4px 15px #000000;
+}
+
+.titulo-principal .frase-efeito {
+  color: #F1ECFF;
+  font-family: var(--font2);
+  font-size: 2.5em;
+  text-shadow:  1px 4px 10px #000000;
+}
+
+.escolha-reserva {
+  text-align: center;
+  margin-top: 10px;
+  padding: 40px 40px 0px 40px;
+}
+
+.escolha-reserva .reserva {
+  background-color: #F1ECFF;
+  padding: 15px;
+  width: 220px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.escolha-reserva .reserva.data {
+  font-size: 1.3em;
+}
+
+.escolha-reserva .reserva.selecionar-reserva {
+  background-color: #ffa000c1;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.3em;
+  padding: 18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
