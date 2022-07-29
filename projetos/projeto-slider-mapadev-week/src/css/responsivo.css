@@ -1,1 +1,41 @@
-
+@media (max-width: 620px) {
+  
+  body {
+    background: url('../imagens/fundo-responsivo.png') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .personagens-slider {
+    padding: 0 15px;
+    gap: 10px;
+  }
+  
+  .btn-seta {
+    width: 20px;
+    height: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lista-personagens {
+    height: 550px;
+  }
+  
+  .cartao .imagem-personagem {
+    max-width: 200px;
+    max-height: 350px;
+  }
+  
+  .informacoes .nome {
+    width: 50%;
+    font-size: 18px;
+  }
+  
+  .cartao .informacoes .vida {
+    font-size: 14px;
+  }
+  
+}
