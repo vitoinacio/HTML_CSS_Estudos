@@ -20,6 +20,10 @@ body {
   height: 100vh;
 }
 
+.container #menu{
+  display: none;
+}
+
 .escopo {
   background: url('../imagens/vista.jpeg') no-repeat;
   background-size: cover;
