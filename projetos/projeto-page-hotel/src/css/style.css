@@ -15,7 +15,6 @@
 }
 
 body {
-  background-color: grey;
   font-family: var(--font1);
   width: 100vw;
   height: 100vh;
@@ -26,6 +25,7 @@ body {
   background-size: cover;
   width: 100vw;
   height: 750px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 90px;
 }
 
 .logo {
@@ -124,4 +124,123 @@ body {
   font-size: 1.3em;
   padding: 18px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.escolha-reserva .reserva.selecionar-reserva:hover {
+  background-color: rgba(238,207,0,5);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.corpo {
+  background-color: #F1ECFF;
+  padding: 50px;
+  margin-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 90px;
+}
+
+.corpo .informacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 600px;
+}
+
+.informacao .sobre {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 500px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sobre .titulo-informacao {
+  color: var(--cor4);
+  font-family: var(--font3);
+  font-size: 2em;
+  text-indent: 20px;
+  padding: 5px;
+}
+
+.sobre .descricao {
+  font-size: 1.2em;
+  text-indent: 20px;
+  padding: 10px;
+}
+
+.sobre .sobre-caminho {
+  font-family: var(--font3);
+  color: var(--cor4);
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.sobre .sobre-caminho:hover {
+  text-decoration: underline;
+  color: var(--cor4);
+}
+
+.sobre .sobre-caminho::after {
+  content: '\00a0\00a0\00a0 →';
+}
+
+.informacao .informacao-imagem {
+  width: 470px;
+  height: 500px;
+}
+
+.rodape {
+  background-color: var(--cor2);
+  position: relative;
+  padding: 124px 0;
+  margin-top: 70px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 90px;
+}
+
+.sobre-nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 100px;
+}
+
+.sobre-nos .titulo-sobre-nos {
+  font-family: var(--font2);
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  left: 36.8%;
+  width: 250px;
+  height: 70px;
+  font-size: 2.5em;
+}
+
+.sobre-nos .locacoes, .contatos, .atendimento {
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.sobre-nos .indicadores {
+  color: #0a5466;
+  font-size: 2em;
+  font-family: var(--font2);
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.descricoes {
+  color: #000000a7;
+  font-size: 1.02em;
+}
+
+.sobre-nos .termos-uso {
+  position: absolute;
+  bottom: 20px;
+  left: 23%;
+  text-align: center;
+  line-height: 1.5em;
 }
