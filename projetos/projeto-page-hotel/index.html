@@ -13,23 +13,33 @@
 </head>
 <body>
 	<header class="escopo">
+	  <div class="container">
+  	  <input type="checkbox" id="menu" class="mark"/>
+	    <label for="menu" class="menu-mobal">
+	      <span class="linha"></span>
+	      <span class="linha"></span>
+	      <span class="linha"></span>
+    	</label>
+  	</div>
 	  <section class="logo">
 	    <img src="src/imagens/logo.png" alt="logo do hotel" class="logo-imagem"/>
 	    <h6 class="nome-hotel">
 	      Styles Hotel
       </h6>
 	  </section>
-	  <section class="opcoes">
-	    <nav class="navegacao">
-	      <a href="#">Home</a>
-	      <a href="#">About</a>
-	      <a href="#">Rooms</a>
-	      <a href="#">Restaurant</a>
-	      <a href="#">Activies</a>
-	      <a href="#">Galery</a>
-	      <a href="#">Contact</a>
-	    </nav>
-	  </section>
+	    <label for="menu" class="opcoes">
+        <section class="opcoes">
+          <nav class="navegacao">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Rooms</a>
+            <a href="#">Restaurant</a>
+            <a href="#">Activies</a>
+            <a href="#">Galery</a>
+            <a href="#">Contact</a>
+          </nav>
+	      </section>
+  	  </label>
 	  <section class="titulo-principal">
 	    <h1 class="nome">
 	      Styles Hotel
@@ -39,8 +49,8 @@
 	    </h4>
 	  </section>
 	  <section class="escolha-reserva">
-	    <input type="date" name="entrada" id="entrada" value="" class="reserva data"/>
-	    <input type="date" name="saida" id="saida" value=""class="reserva data"/><br/>
+	    <input type="date" name="entrada" id="entrada" value="entrada" class="reserva data"/>
+	    <input type="date" name="saida" id="saida" value="saida"class="reserva data"/><br/>
 	    <input type="submit" name="reserve" id="reserve" value="Reservar agora" class="reserva selecionar-reserva"/>
 	  </section>
 	</header>
