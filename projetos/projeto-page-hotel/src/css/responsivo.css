@@ -1,1 +1,107 @@
+@charset "UTF-8";
 
+@media (max-width: 620px) {
+  
+  .logo {
+    width: 140px;
+    padding-top: 50px;
+  }
+  
+  .logo .logo-imagem {
+    width: 30px;
+  }
+  
+  .logo .nome-hotel {
+    font-size: 14px;
+  }
+  
+  .opcoes {
+    width: 483px;
+  }
+  
+  .navegacao a {
+    font-size: 17px;
+    padding: 5px;
+  }
+  
+  .titulo-principal {
+    margin-top: 100px;
+    padding: 20px 40px;
+  }
+  
+  .titulo-principal .nome {
+    font-size: 4em;
+  }
+  
+  .titulo-principal .frase-efeito {
+    font-size: 1.5em;
+    padding-top: 17px;
+  }
+  
+  .escolha-reserva .reserva {
+    padding: 10px;
+  }
+  
+  .escolha-reserva {
+    margin-top: 50px;
+  }
+  
+  .corpo {
+    padding: 0 32px 20px 32px;
+  }
+  
+  .corpo .informacao {
+    display: inline-block;
+  }
+  
+  .informacao .sobre {
+    width: 420px;
+    height: 420px;
+    gap: 30px;
+  }
+  
+  .sobre .titulo-informacao {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  
+  .sobre .descricao {
+    font-size: 1em;
+    line-height: 1.7em;
+  }
+  
+  .sobre .sobre-caminho {
+    font-size: 1.7em;
+    text-align: center;
+  }
+  
+  .informacao .informacao-imagem {
+    width: 425px;
+    height: 350px;
+  }
+  
+  .rodape {
+    padding: 100px 70px;
+  }
+  
+  .sobre-nos {
+    display: inline-block;
+  }
+  
+  .sobre-nos .titulo-sobre-nos {
+    left: 24.5%;
+    font-size: 1.8em;
+  }
+  
+  .sobre-nos .locacoes, .contatos, .atendimento {
+    width: 150px;
+    font-size: 12px;
+    padding-bottom: 30px;
+  }
+ 
+  .sobre-nos .termos-uso{
+    left: 9%;
+    font-size: 12px;
+  }
+  
+}
