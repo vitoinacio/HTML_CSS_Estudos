@@ -7,14 +7,6 @@
     overflow-x: hidden;
   }
   
-  .opcoes {
-    background-color: var(--cor3);
-    width: 50%;
-    height: 60%;
-    transform: translateX(200%);
-    margin-top: 90px;
-  }
-  
   .container {
     width: 60px;
     height: 50px;
@@ -24,19 +16,23 @@
   }
   
   .menu-mobal {
+    position: relative;
     display: block;
     padding: 3px;
     width: 100%;
+    right: 20px;
     height: 100%;
   }
   
   .linha {
     display: block;
+    position: absolute;
     padding: 4px;
     background-color: #F1ECFF;
     border-radius: 10px;
-    transition: transform 0.5s ease-in-out;
-    z-index: 100%;
+    width: 90%;
+    transition: transform 0.5s ease-in-out, background-color 0.5s;
+    z-index: 1;
   }
   
   .menu-mobal .linha:nth-child(1) {
@@ -44,25 +40,28 @@
   }
   
   .menu-mobal .linha:nth-child(2) {
-    margin-top: 8px;
+    margin-top: 18.2px;
   }
   
   .menu-mobal .linha:nth-child(3) {
-    margin-top: 8px;
+    margin-top: 35px;
   }
   
   .mark:checked + .menu-mobal .linha:nth-child(1) {
     transform: rotate(45deg);
-    margin-top: 17px;
+    margin-top: 18.5px;
+    background-color: black;
   }
   
   .mark:checked + .menu-mobal .linha:nth-child(2) {
     opacity: 0;
+    background-color: black;
   }
   
   .mark:checked + .menu-mobal .linha:nth-child(3) {
     transform: rotate(-45deg);
-    margin-top: -24px;
+    margin-top: 17.7px;
+    background-color: black;
   }
   
   
@@ -79,8 +78,25 @@
     font-size: 14px;
   }
   
+    .opcoes {
+    background-color: var(--cor1);
+    width: 50%;
+    height: 60%;
+    transform: translateX(200%);
+    margin-top: 30px;
+    transition: transform 1s ease-in-out, border-radius 1s ease-in-out;
+    border-radius: 100%;
+    z-index: 0;
+  }
+  
+  .active {
+    transform: translateX(100%);
+    border-radius: 20px;
+    z-index: 0;
+  }
+  
   .navegacao {
-    margin-top: 5%;
+    margin-top: 100px;
     flex-direction: column;
     text-align: center;
     gap: 30px;
@@ -89,7 +105,7 @@
   .navegacao a {
     font-size: 20px;
     padding: 5px;
-    margin-left: -100px;
+    margin-left: -300px;
   }
   
   .titulo-principal {
@@ -170,6 +186,83 @@
   .sobre-nos .termos-uso{
     left: 9%;
     font-size: 12px;
+  }
+  
+}
+
+@media (min-width: 620px) {
+  
+  .escopo {
+    background: url('../imagens/vista.jpeg') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 900px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 90px;
+  }
+  
+  
+  
+  .logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    padding: 20px;
+    top: -3px;
+    left: -10px;
+    z-index: 2;
+  }
+
+  .logo .logo-imagem {
+    width: 50px;
+  }
+  
+  .logo .nome-hotel {
+    font-family: var(--font2);
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow:  1px 4px 15px #000000;
+  }
+  
+  .navegacao a {
+    color: rgba(0,0,0);
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 30px 20px 30px 20px;
+    text-shadow:  1px 1px 30px #000000;
+  }
+  
+  .titulo-principal {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 200px 100px;
+  }
+  
+  .titulo-principal .nome {
+    color: #F1ECFF;
+    font-family: var(--font2);
+    font-size: 6em;
+    margin-top: 130px;
+    text-shadow:  1px 4px 15px #000000;
+  }
+  
+  .titulo-principal .frase-efeito {
+    color: #F1ECFF;
+    font-family: var(--font2);
+    font-size: 2.5em;
+    text-shadow:  1px 4px 10px #000000;
+  }
+    
+  .escolha-reserva {
+    text-align: center;
+    margin-top: -80px;
+    padding: 40px 40px 0px 40px;
   }
   
 }
