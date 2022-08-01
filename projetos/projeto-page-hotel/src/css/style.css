@@ -53,15 +53,14 @@ body {
 }
 
 .opcoes {
-  background-color: #e1e1e13f;
+  background-color: #F1ECFF;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   position: fixed;
   top: -1px;
-  left: 0;
-  gap: space-between;
   width: 100vw;
+  z-index: 1;
 }
 
 .opcoes .navegacao {
@@ -71,15 +70,16 @@ body {
 
 .navegacao a {
   color: rgba(0,0,0);
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-weight: bold;
   cursor: pointer;
-  padding: 16px 17px;
+  padding: 30px 20px 30px 20px;
   text-shadow:  1px 1px 30px #000000;
 }
 
 .navegacao a:hover {
-  background-color: #e1e1e18f;
+  background-color: grey;
+  color: white;
 }
 
 .titulo-principal {
