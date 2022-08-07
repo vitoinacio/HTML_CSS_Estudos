@@ -108,12 +108,12 @@
   }
   
   .icon-informacoes {
-    width: 30px;
+    width: 25px;
   }
   
   .container-informacoes > p {
-  line-height: 14px;
-  font-size: 12px;
+  line-height: 12px;
+  font-size: 9px;
   }
   
   .rodape {
