@@ -1,1 +1,132 @@
+@charset "UTF-8";
 
+@media (max-width: 620px) {
+  
+  .corpo {
+    width: 112vw;
+  }
+  
+  .menu {
+    background-color: var(--cor1);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -300px;
+    width: 100%;
+    padding: 20px;
+    transition: top 0.5s ease-in-out;
+  }
+  
+  .active {
+    top: 60px;
+  }
+  
+  .caixa-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: 10px;
+    width: 50px;
+    height: 40px;
+  }
+  
+  .caixa-menu span {
+    position: absolute;
+    background-color: var(--cor4);
+    width: 100%;
+    padding: 3px;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .caixa-menu span:nth-Child(1) {
+    top: 0;
+  }
+  .caixa-menu span:nth-Child(2) {
+    top: 18px;
+  }
+  .caixa-menu span:nth-Child(3) {
+    top: 35px;
+  }
+  
+  #checkbox:checked + label span:nth-child(1) {
+    top: 18px;
+    transform: rotate(45deg);
+  }
+  #checkbox:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+  #checkbox:checked + label span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+  
+  .header {
+    background: url('../imagens/fundo.jpg') no-repeat;
+    background-size: cover;
+    padding: 30px;
+  }
+  
+  .titulo {
+    font-size: 3em;
+  }
+  
+  .subtitulo {
+    font-size: 1.5em;
+  }
+  
+  .email {
+    padding: 10px;
+  }
+  
+  .titulo-apresentacao {
+    font-size: 1.3em;
+  }
+  
+  .apresentacao {
+    gap: 30px;
+  }
+  
+  .img-apresentacao {
+    width: 200px;
+  }
+  
+  .informacao-apresentacao {
+    font-size: 12px;
+  }
+  
+  .informacoes {
+    padding: 20px;
+  }
+  
+  .container-informacoes {
+    gap: 8px;
+    padding: 5px;
+    width: calc(100% / 3);
+    height: 300px;
+  }
+  
+  .icon-informacoes {
+    width: 30px;
+  }
+  
+  .container-informacoes > p {
+  line-height: 14px;
+  font-size: 12px;
+  }
+  
+  .rodape {
+    padding: 10px;
+  }
+  
+  .nome-categoria {
+    font-size: 1.2em;
+  }
+  
+  .info-categoria {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+}
